@@ -1,11 +1,11 @@
 let amigos = [];
 
 function adicionarAmigo() {
-    let nome = document.getElementById("amigo").value; // Correção aqui!
+    let nome = document.getElementById("amigo").value; 
     
     if (nome.trim() !== "") {
         amigos.push(nome);
-        document.getElementById("amigo").value = ""; // Limpa o campo após adicionar
+        document.getElementById("amigo").value = ""; 
         atualizarLista();
     } else {
         alert("Digite um nome válido!");
@@ -14,7 +14,7 @@ function adicionarAmigo() {
 
 function atualizarLista() {
     let lista = document.getElementById("listaAmigos");
-    lista.innerHTML = ""; // Limpa a lista antes de atualizar
+    lista.innerHTML = "";
 
     amigos.forEach(amigo => {
         let li = document.createElement("li");
